@@ -1,0 +1,69 @@
+# COREAS V0.9 by Tim Huege <tim.huege@kit.edu> & Marianne Ludwig - parameter file
+
+# global parameters:
+
+ParameterFileVersion = 22			; do not change manually
+
+# parameters setting up the spatial observer configuration:
+
+CoreCoordinateNorth = 0			; in cm
+CoreCoordinateWest = 0			; in cm
+CoreCoordinateVertical = 0			; in cm
+
+# parameters setting up the temporal observer configuration:
+
+TimeResolution = 1e-10			; in s
+AutomaticTimeBoundaries = 4e-07			; 0: off, x: automatic boundaries with width x in s
+TimeLowerBoundary = -1				; in s, only if AutomaticTimeBoundaries set to 0
+TimeUpperBoundary = 1				; in s, only if AutomaticTimeBoundaries set to 0
+ResolutionReductionScale = 0			; 0: off, x: decrease time resolution linearly every x cm in radius
+
+# parameters setting up the simulation functionality:
+GroundLevelRefractiveIndex = 1.000292			; specify refractive index at 0 m asl
+
+# event information for Offline simulations:
+
+EventNumber = -1
+GPSSecs = 0
+GPSNanoSecs = 0
+CoreEastingPampaAmarilla = 0			; in meters
+CoreNorthingPampaAmarilla = 0			; in meters
+CoreVerticalPampaAmarilla = 0			; in meters
+RotationAngleForMagfieldDeclination = 0	; in degrees
+# event information for read directly from CORSIKA simulations:
+
+ShowerZenithAngle = 0				; in degrees
+ShowerAzimuthAngle = 0				; in degrees, 0: shower propagates to north, 90: to west
+PrimaryParticleEnergy = 1e+15			; in eV
+PrimaryParticleType = 14				; as defined in CORSIKA
+
+# -------------------------------------------------
+
+# parameters only relevant for REAS3 resimulations:
+
+NumParticlesToCalculate = 10000000000
+NumSimultaneousParticles = 1000000
+RandomSeed = -1					; -1: chosen randomly, other: chosen manually
+AtmosphereModel = 0				; 0: US Standard, 10: Argentina Winter, 20: Europe January, 30: South Pole March, 90: Constant Density
+CurvedGeometry = 0
+EarthRadius = 637131500				; in cm, only used if Curved = 1
+AutomaticLambdaEnlargementToggle = 0
+AutomaticBinInactivationToggle = 1
+ComparisonLowestFrequency = 0			; in Hz, for automatic groundbin inactivation
+ComparisonHighestFrequency = 100000000			; in Hz, for automatic groundbin inactivation
+RequiredRelativePrecision = 0.001			; in case of automatic groundbin inactivation
+SufficientDynamicRange = 0.001			; in case of automatic groundbin inactivation
+NumPrecisionComparisons = 5			; in case of automatic groundbin inactivation
+TrajectoryPointsPerUnitPathDepth = 0
+ShowerEvolutionClippingDistance = 100000		; in cm
+MeanPathDepth = 0.05				; in g/cm^2
+PathDepthProjectionToggle = 1			; backproject path depths appropriately
+CorsikaFilePath = /data/d1lp4/general/ohio2012/				; path to the CORSIKA files (cannot include space characters!)
+CorsikaParameterFile = RUN000001.inp				; specify CORSIKA card file
+CorsikaSlantOptionToggle = 1			; set to 1 if CORSIKA option SLANT is used
+SelectedCorsikaShower = 1					; 0: averaged, i: i-th shower
+ShowerEvolutionShift = 0			; apply slant depth shift to CORSIKA-derived shower evolution, in g/cm^2
+ElectricFieldToggle = 0				; 
+ElectricFieldStrength = 100			; in V/m
+ElectricFieldInclinationAngle = 90		; in degrees, 90: field points downwards
+ElectricFieldAzimuthAngle = 0			; in degrees, 90: field points westwards

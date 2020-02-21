@@ -6,10 +6,57 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		41F742C22400360E004CE5D7 /* sim_event_list.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sim_event_list.sh; sourceTree = "<group>"; };
+		41F742C32400360E004CE5D7 /* SIM.reas */ = {isa = PBXFileReference; lastKnownFileType = text; path = SIM.reas; sourceTree = "<group>"; };
+		41F742C42400360E004CE5D7 /* runJobs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = runJobs.py; sourceTree = "<group>"; };
+		41F742C52400360E004CE5D7 /* get_fit_info.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = get_fit_info.py; sourceTree = "<group>"; };
+		41F742C62400360E004CE5D7 /* makeJobs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = makeJobs.py; sourceTree = "<group>"; };
+		41F742C72400360E004CE5D7 /* findSimFiles.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = findSimFiles.py; sourceTree = "<group>"; };
+		41F742C82400360E004CE5D7 /* energy_scale */ = {isa = PBXFileReference; lastKnownFileType = folder; path = energy_scale; sourceTree = "<group>"; };
+		41F742C92400360F004CE5D7 /* jobs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jobs; sourceTree = "<group>"; };
+		41F742CA2400360F004CE5D7 /* ldf_db_rev.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ldf_db_rev.pyc; sourceTree = "<group>"; };
+		41F742CB24003610004CE5D7 /* makeSteering.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = makeSteering.py; sourceTree = "<group>"; };
+		41F742CC24003610004CE5D7 /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		41F742CD24003610004CE5D7 /* CR_event_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CR_event_info.txt; sourceTree = "<group>"; };
+		41F742CE24003610004CE5D7 /* getevent_rev.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = getevent_rev.py; sourceTree = "<group>"; };
+		41F742CF24003610004CE5D7 /* corsika_sims */ = {isa = PBXFileReference; lastKnownFileType = folder; name = corsika_sims; sourceTree = "<group>"; };
+		41F742D024003610004CE5D7 /* Get_data_from_Db.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = Get_data_from_Db.py; sourceTree = "<group>"; };
+		41F742D124003610004CE5D7 /* sim_event_list.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sim_event_list.txt; sourceTree = "<group>"; };
+		41F742D224003611004CE5D7 /* info */ = {isa = PBXFileReference; lastKnownFileType = folder; path = info; sourceTree = "<group>"; };
+		41F742D324003611004CE5D7 /* station_info */ = {isa = PBXFileReference; lastKnownFileType = folder; path = station_info; sourceTree = "<group>"; };
+		41F742D424003611004CE5D7 /* best_sim_files.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = best_sim_files.txt; sourceTree = "<group>"; };
+		41F742D524003611004CE5D7 /* ldf_db_rev.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ldf_db_rev.py; sourceTree = "<group>"; };
+		41F742D624003611004CE5D7 /* cr_physics_new */ = {isa = PBXFileReference; lastKnownFileType = text; path = cr_physics_new; sourceTree = "<group>"; };
+		41F742D724003611004CE5D7 /* SIM000149.list */ = {isa = PBXFileReference; lastKnownFileType = text; path = SIM000149.list; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		41F742BB240035F6004CE5D7 = {
 			isa = PBXGroup;
 			children = (
+				41F742D424003611004CE5D7 /* best_sim_files.txt */,
+				41F742CF24003610004CE5D7 /* corsika_sims */,
+				41F742CD24003610004CE5D7 /* CR_event_info.txt */,
+				41F742D624003611004CE5D7 /* cr_physics_new */,
+				41F742C82400360E004CE5D7 /* energy_scale */,
+				41F742C72400360E004CE5D7 /* findSimFiles.py */,
+				41F742D024003610004CE5D7 /* Get_data_from_Db.py */,
+				41F742C52400360E004CE5D7 /* get_fit_info.py */,
+				41F742CE24003610004CE5D7 /* getevent_rev.py */,
+				41F742D224003611004CE5D7 /* info */,
+				41F742C92400360F004CE5D7 /* jobs */,
+				41F742D524003611004CE5D7 /* ldf_db_rev.py */,
+				41F742CA2400360F004CE5D7 /* ldf_db_rev.pyc */,
+				41F742C62400360E004CE5D7 /* makeJobs.py */,
+				41F742CB24003610004CE5D7 /* makeSteering.py */,
+				41F742C42400360E004CE5D7 /* runJobs.py */,
+				41F742CC24003610004CE5D7 /* setup.sh */,
+				41F742C22400360E004CE5D7 /* sim_event_list.sh */,
+				41F742D124003610004CE5D7 /* sim_event_list.txt */,
+				41F742C32400360E004CE5D7 /* SIM.reas */,
+				41F742D724003611004CE5D7 /* SIM000149.list */,
+				41F742D324003611004CE5D7 /* station_info */,
 			);
 			sourceTree = "<group>";
 		};
